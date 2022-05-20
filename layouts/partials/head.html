@@ -1,41 +1,11 @@
 <head>
-  <title>
-    {{ if (eq .Site.Params.reversepagetitle true) }}
-      {{ with .Title }}
-        {{ . }} |
-
-      {{ end }}
-      {{ .Site.Params.author }}
-
-
-    {{ else }}
-      {{ .Site.Params.author }}{{ with .Title }}
-        |
-        {{ . }}
-
-
-      {{ end }}
-
-
-    {{ end }}
-  </title>
-
-  <!-- Meta -->
-  <meta charset="utf-8" />
-  {{- hugo.Generator -}}
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <!-- Meta -->
+ <meta
+  <meta charset="UTF-8">
+  <Title> Jaya Narayan - Psychotherapist & Counselling </title>
+      <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta name="author" content="{{ .Site.Params.author }}" />
-  <meta
-    name="description"
-    content="{{ if .Params.description }}
-      {{ .Params.description }}
-
-
-    {{ else }}
-      {{ .Site.Params.description }}
-
-
-    {{ end }}"
+  <meta name="description" content="Jay Narayan helps by embodying the therapeutic stance of integrity, transparency and relationality. Nurturing safe space for individuals and groups.">
   />
   {{ if .Params.redirectUrl }}
     <meta http-equiv="refresh" content="1; url={{ .Params.redirectUrl }}" />
