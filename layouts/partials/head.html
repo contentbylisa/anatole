@@ -205,6 +205,17 @@
 
   {{- if ne $js "" -}}
     {{- $secureJS := $js |  resources.Minify | resources.Fingerprint -}}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "Jaya Narayan",
+  "alternateName": "Jaya-narayan.com",
+  "url": "https://www.jaya-narayan.com/",
+  "logo": "https://www.jaya-narayan.com/avatar-1.jpeg"
+}
+</script>
+
     <script
       type="text/javascript"
       src="{{ $secureJS.RelPermalink }}"
